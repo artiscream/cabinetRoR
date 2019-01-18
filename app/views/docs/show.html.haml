@@ -1,6 +1,6 @@
-%h1 = @doc.title
-%p = @doc.content
+%h1=@doc.title
+%p=@doc.content
 
-= link_to "Add docs", docs_path
-= link_to "Edit doc", edit_doc_path(@doc)
-= link_to "Delete", doc_path(@doc),method: :delete, data: {confirm: "Are you sure?"}
+=link_to "Add docs", docs_path
+=link_to "Edit doc", edit_doc_path(@doc)
+=link_to "Delete", doc_path(@doc),method: :delete, data: {confirm: "Are you sure?"}
