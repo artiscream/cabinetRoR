@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'welcome/index'
   # setting root directory to this welcome index page
   root 'welcome#index'
