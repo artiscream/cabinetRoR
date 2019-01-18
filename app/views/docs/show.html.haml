@@ -1,6 +1,9 @@
-%h1=@doc.title
-%p=@doc.content
+.wrapper_with_padding
+	#docs_show
 
-=link_to "Add docs", docs_path
-=link_to "Edit doc", edit_doc_path(@doc)
-=link_to "Delete", doc_path(@doc),method: :delete, data: {confirm: "Are you sure?"}
+		%h1= @doc.title
+		%p= simple_format(@doc.content)
+
+		.buttons
+			=link_to "Edit doc", edit_doc_path(@doc), class: "button"
+			=link_to "Delete", doc_path(@doc),method: :delete, data: {confirm: "Are you sure?"}, class: "button"

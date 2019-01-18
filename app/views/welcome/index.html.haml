@@ -3,7 +3,7 @@
 		%br
 		%h1 FileCabinet
 		%p Yours files. Organized. Best.
-		%button=link_to "Enter",new_user_registration_path
+		=link_to "Enter", new_user_registration_path, class: "button"
 		%br
 #callouts
 	.callout_inner
@@ -15,4 +15,4 @@
 	.wrapper
 		%h2 Go ahead!
 		%br 
-		%button=link_to "Join now!",new_user_registration_path
+		=link_to "Join now!", new_user_registration_path, class: "button"
